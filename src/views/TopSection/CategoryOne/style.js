@@ -14,7 +14,7 @@ export const CategoryTittle = styled.div`
 export const CategoryDescription = styled.div`
   font-size: 32px;
   font-weight: 400;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 72px 0;
 `;
 
 export const ButtonLink = styled.div`

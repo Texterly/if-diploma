@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 400;
 `;
@@ -41,7 +40,7 @@ export const Search = styled.div`
 
 export const NavRight = styled.div`
   display: flex;
-  align-self: center;
+  align-self: self-end;
   color: #fff;
   width: 570px;
   height: 28px;
