@@ -55,4 +55,8 @@ export const NavRight = styled.div`
       margin-right: 80px;
     }
   }
+  & a {
+    text-decoration: none;
+    color: #fff;
+  }
 `;

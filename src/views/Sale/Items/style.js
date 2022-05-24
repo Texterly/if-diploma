@@ -5,7 +5,7 @@ export const StyleItems = styled.div`
   justify-content: space-between;
 `;
 
-export const Item = styled.div`
+export const Items = styled.div`
   position: relative;
   width: 600px;
   height: 800px;

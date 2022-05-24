@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Items from "./Items/Items";
+import Blocks from "./Items/Blocks";
+// import Items from "./Items/Items";
 
 const CategoryThree = styled.div`
   margin: 360px 207px 200px;
@@ -19,13 +20,14 @@ const Title = styled.div`
   }
 `;
 
-function Sale() {
+function Sale({data}) {
     return(
         <CategoryThree>
             <Title>
                 <p>#MODNIKKY_ <span>Sale</span></p>
             </Title>
-            <Items/>
+            <Blocks data={data}/>
+            {/*<Items/>*/}
         </CategoryThree>
     )
 }
