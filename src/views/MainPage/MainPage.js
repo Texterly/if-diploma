@@ -1,27 +1,33 @@
-import Header from "./Header/Header";
-import React from "react";
-import styled from "styled-components";
-import MainBackground from '../../assets/img/MainPage/mask.jpg'
-import CategoryOne from "./CategoreOne/CategoryOne";
-
-const MainSection = styled.div`
-  background: url(${props => props.background});
-  background-size: 100%;
-  //min-height: 100vh;
-  //width: 100%;
-  max-width: 2880px;
-  height: 1674px;
-`;
-
-
+import React, {useEffect, useState} from "react";
+import TopSection from "../TopSection/TopSection";
+import Shop from "../Shop/Shop";
+import Sale from "../Sale/Sale";
+import InstaShop from "../InstaShop/InstaShop";
+import Footer from "../Footer/Footer";
 
 function MainPage () {
-    return(
-        <MainSection background={MainBackground}>
-            <Header/>
-            <CategoryOne/>
-        </MainSection>
+
+    const [serverData, setServerData] = useState([])
+
+    useEffect(() => {
+
+        fetch('https://modnikky-api.herokuapp.com/api/catalog')
+            .then((response) => {
+                return response.json()
+            })
+            .then(setServerData)
+    },[])
+
+    console.log(serverData)
+
+    return (
+        <>
+            <TopSection/>
+            <Shop/>
+            { serverData.length > 0 && <Sale data={serverData}/>}
+            <InstaShop/>
+            <Footer/>
+        </>
     )
 }
-
-export default MainPage
+export default MainPage;
