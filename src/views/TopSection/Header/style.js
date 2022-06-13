@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {colors} from "../../../data/SiteConfig";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -13,12 +14,12 @@ export const StyleHeader = styled.div`
   justify-content: space-between;
   min-width: 2640px;
   height: 50px;
-  
+  color: ${colors.white};
+  fill: ${colors.white}
 `;
 
 export const NavLeft = styled.div`
   display: flex;
-  color: #ffffff;
   width: 567px;
   align-items: flex-end;
   & div{
@@ -35,13 +36,13 @@ export const Search = styled.div`
   display: flex;
   & svg{
     margin-right: 10px;
+    fill: ${colors.white}
   }
 `;
 
 export const NavRight = styled.div`
   display: flex;
   align-self: self-end;
-  color: #fff;
   width: 570px;
   height: 28px;
   & div {
@@ -57,6 +58,9 @@ export const NavRight = styled.div`
   }
   & a {
     text-decoration: none;
-    color: #fff;
+    color: ${colors.white}
+  }
+  & svg {
+    fill: ${colors.white}
   }
 `;

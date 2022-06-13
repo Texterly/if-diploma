@@ -15,10 +15,15 @@ const MainSection = styled.div`
 
 
 
-function TopSection () {
+const TopSection = ({
+                         userWantsToSearch,
+                         setUserWantsToSearch
+                    }) => {
     return(<>
         <MainSection background={MainBackground}>
-            <Header/>
+            <Header userWantsToSearch={userWantsToSearch}
+                    setUserWantsToSearch={setUserWantsToSearch}
+            />
             <CategoryOne/>
         </MainSection>
         </>

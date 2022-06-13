@@ -2,8 +2,8 @@ import{handleActions} from 'redux-actions'
 import {login, logout} from "./actions";
 
 export const initialState = {
-    email:'fedya@gmail.com',
-    password:'fedya123',
+    email:'pasha@gmail.com',
+    password:'pasha',
     isLogged: false,
 }
 

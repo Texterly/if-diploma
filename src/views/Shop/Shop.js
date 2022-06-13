@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Product from "./Product/Product";
+import {category} from "../../data/shop";
+// import {Wrapper} from "../../globalStyles";
 
 const CategoryTwo = styled.div`
   margin: 180px 210px;
@@ -18,14 +20,25 @@ const Title = styled.div`
   }
 `;
 
+const CategoryWrapper = styled.div`
+  display: flex;
+`;
 
-function Shop () {
+function Shop ({setSumVisibleCards}) {
     return(
         <CategoryTwo>
             <Title>
                 <p>Shop by the <span>Category</span></p>
             </Title>
-            <Product/>
+            <CategoryWrapper>
+                {
+                    category.map((item, i) => (
+                        <Product key={i}
+                                 item={item}
+                                 setSumVisibleCards={setSumVisibleCards}/>
+                    ))
+                }
+            </CategoryWrapper>
         </CategoryTwo>
     )
 }

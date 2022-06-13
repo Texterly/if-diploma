@@ -1,15 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-function SignIn () {
-    // const [wantsToOut, setWantsToOut] = useState(false);
-
-    // const accountClick = () => {
-    //     setWantsToOut(!wantsToOut)
-    // }
+function SignIn ({wrapperStyle}) {
     return (
-        <Link to='authorization'>
-            <div>SIGN IN</div>
+        <Link to='authorization' style={wrapperStyle}>
+            <div style={wrapperStyle}>SIGN IN</div>
         </Link>
     )
 }
