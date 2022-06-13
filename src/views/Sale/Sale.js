@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Blocks from "./Items/Blocks";
-// import Items from "./Items/Items";
 
 const CategoryThree = styled.div`
   margin: 360px 207px 200px;
+  position: relative;
 `;
 
 const Title = styled.div`
@@ -27,7 +27,6 @@ function Sale({data}) {
                 <p>#MODNIKKY_ <span>Sale</span></p>
             </Title>
             <Blocks data={data}/>
-            {/*<Items/>*/}
         </CategoryThree>
     )
 }

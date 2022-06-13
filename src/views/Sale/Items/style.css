@@ -1,0 +1,38 @@
+.swiper-wrapper {
+    /*overflow: hidden;*/
+    display: flex;
+}
+
+.swiper-button-prev {
+    top: 40% !important;
+    color: #000 !important;
+    left: -70px !important;
+    background-image: url('/src/assets/img/Sale/next.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 140px !important;
+    height: 140px !important;
+    transform: rotate(180deg);
+}
+
+.swiper-button-next {
+    top: 40% !important;
+    color: #000 !important;
+    right: -74px !important;
+    background-image: url('/src/assets/img/Sale/next.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 140px !important;
+    height: 140px !important;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+

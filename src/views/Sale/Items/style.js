@@ -3,12 +3,18 @@ import styled from "styled-components";
 export const StyleItems = styled.div`
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  //position: relative;
 `;
 
 export const Items = styled.div`
   position: relative;
   width: 600px;
-  height: 800px;
+  height: 890px;
+  & img {
+    width: 600px;
+    height: 800px;
+  }
 `;
 
 export const Like = styled.svg`
@@ -20,7 +26,7 @@ export const Like = styled.svg`
 export const Discount = styled.div`
 position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 90px;
   width: 88px;
   height: 48px;
   color: #fff;
@@ -50,3 +56,4 @@ export const Sale = styled.div`
     }
   }
 `;
+
